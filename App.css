@@ -1,0 +1,271 @@
+/************custon-propite************/
+:root {
+  --Dark-Mode-Elements: hsl(209, 23%, 22%);
+  --Dark-Mode-Background: hsl(207, 26%, 17%);
+  --Light-Mode-Text: hsl(200, 15%, 8%);
+  --Light-Mode-Input: hsl(0, 0%, 52%);
+  --Light-Mode-Background: hsl(0, 0%, 98%);
+  --Dark-Mode-Text-Light-Mode-Elements: hsl(0, 0%, 100%);
+}
+
+/****************reset*******************/
+html {
+  box-sizing: border-box;
+  font-family: var(--font-famili);
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+h6 {
+  margin: 0;
+  font-size: 0.5rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  line-height: 1.6;
+}
+
+/**************utilitis**************/
+.App {
+  color: var(--Light-Mode-Text);
+}
+
+.content-loadin {
+  margin: auto;
+  padding: auto;
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/***************header***************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  height: 4rem;
+  box-shadow: 0 0 2px 0 var(--Dark-Mode-Background);
+}
+.header h1 {
+  font-size: 3.2vh;
+}
+/******input search*****/
+
+input[type="search"] {
+  width: 90%;
+  margin: 1rem;
+  padding: 1rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  border: thin solid rgb(233, 230, 230);
+  font-size: 2.6vh;
+}
+
+/*******selet region*******/
+
+.region {
+  width: 45%;
+  height: 2.5rem;
+  margin: 1rem;
+  padding: 0.6rem;
+  border-radius: 6px;
+  font-size: 2.6vh;
+
+  border: thin solid rgb(233, 230, 230);
+}
+
+option {
+  font-family: sans-serif;
+  border-radius: 2px;
+  background-color: transparent;
+  padding: 0.8rem;
+  margin: 0.2rem;
+}
+/******body conten for de data countrie****/
+
+.data-conteiner {
+  padding: 0;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  border: thin solid transparent;
+  border-radius: 8px;
+  background-color: var(--Light-Mode-Background);
+}
+.data-conteiner h2 {
+  cursor: pointer;
+  pointer-events: auto;
+  padding: 0.7rem 1rem;
+  margin: 0.4rem;
+}
+.data-conteiner h2:hover {
+  opacity: 0.8;
+  color: #5672ef;
+}
+.data-conteiner div {
+  padding: 0;
+  margin: 0.4rem 1.2rem;
+}
+
+.data-conteiner p {
+  padding: 0.2rem;
+  margin: auto;
+}
+/*****more data******/
+.bigt-conteiner {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+}
+
+.bigt-conteiner button {
+  width: 33%;
+  height: 2.2rem;
+  margin: 1.8rem 1rem;
+  padding: auto 1rem;
+  font-size: 3.2vh;
+  box-shadow: 3px 3px 3px 3px rgba(8, 8, 12, 0.2);
+
+  border: thin solid var(--Dark-Mode-Element) s;
+  cursor: pointer;
+}
+
+.bigt-conteiner a {
+  text-decoration: none;
+  margin: 1rem;
+  color: #5672ef;
+  font-size: 4vh;
+  font-family: sans-serif;
+}
+
+.bigt-conteiner h2 {
+  margin: 1rem;
+}
+
+.bigt-conteiner img {
+  margin: 1rem;
+}
+.bigt-conteiner div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0.4rem 1rem;
+}
+/****btn changer theme ****/
+.btn-changer-theme {
+  text-decoration: none;
+  border: thin solid transparent;
+  font-size: 2.4vh;
+  background-color: transparent;
+  cursor: pointer;
+}
+/****style for error ****/
+.error {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  background-color: #d63749;
+}
+
+/*******darck-mode*******/
+.darck-elemet {
+  background-color: var(--Dark-Mode-Elements);
+  color: var(--Dark-Mode-Text-Light-Mode-Elements);
+  box-shadow: 3px 3px 3px 3px rgba(8, 8, 12, 0.2);
+}
+.darck {
+  background-color: var(--Dark-Mode-Background);
+  color: var(--Dark-Mode-Text-Light-Mode-Elements);
+}
+
+@media screen and (min-width: 750px) {
+  .main-destok {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 23%);
+  }
+
+  .data-conteiner {
+    padding: 0;
+    margin: 0 0.6rem;
+  }
+  .data-conteiner h2 {
+    padding: 0;
+    margin: 0.4rem;
+    font-size: 2.8vh;
+  }
+  .data-conteiner div {
+    margin: 0.4rem;
+  }
+  .data-conteiner p {
+    padding: 0;
+    margin: 0.4rem;
+    font-size: 2.8vh;
+  }
+  .data-conteiner img {
+    height: 45%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .lite-data-conteinet {
+    display: grid;
+    grid-template-columns: 1;
+  }
+  .bigt-conteiner {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
