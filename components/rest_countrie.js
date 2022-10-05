@@ -105,7 +105,7 @@ const ResCountrie = () => {
         <h1>Where in the world?</h1>
         <DarckMode setChangerTheme={setChangerTheme} />
       </header>
-      <section>
+      <section className="select-data">
         <SearchCountri
           searchCountrie={searchCountrie}
           changerTheme={changerTheme}

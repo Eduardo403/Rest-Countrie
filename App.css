@@ -195,7 +195,7 @@ option {
 .bigt-conteiner img {
   margin: 1rem;
 }
-.bigt-conteiner div {
+.data-big-conteiner div {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -260,12 +260,41 @@ option {
     background-size: cover;
     background-attachment: fixed;
   }
-  .lite-data-conteinet {
-    display: grid;
-    grid-template-columns: 1;
-  }
   .bigt-conteiner {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0;
+  }
+
+  .bigt-conteiner h2 {
+    margin: 1rem;
+  }
+
+  .bigt-conteiner img {
+    margin: 0.4rem;
+    padding: 0.4rem;
+    width: 70%;
+  }
+  .data-big-conteiner div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 0;
+    text-align: left;
+    padding: 0.8rem;
+  }
+  .lite-data-conteinet {
+    align-items: flex-start;
+  }
+  .select-data {
+    display: flex;
+    justify-content: space-between;
+  }
+  .select-data form {
+    width: 60%;
+  }
+  .select-data div {
+    width: 30%;
   }
 }
